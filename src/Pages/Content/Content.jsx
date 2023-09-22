@@ -37,6 +37,9 @@ export default function Content () {
   return (
     <div className='main_content'>
       <div className='slider_project'>
+        <h2 class='title_section'>
+          OUR PROJECTS<div class='border_bottom'></div>
+        </h2>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -166,7 +169,7 @@ export default function Content () {
       </div>
       <div className='Our_Project'>
         <h2 class='title_section'>
-          Trusted by customers<div class='border_bottom'></div>
+          TRUSTED BY CUSTOMERS<div class='border_bottom'></div>
         </h2>
         <p class='card_title text-center mb-5'>
           In consequat, quam id sodales hendrerit, eros mi molestie leo, nec

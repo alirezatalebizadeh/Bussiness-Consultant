@@ -157,7 +157,7 @@
 
 /* =======================card hover */
 
-.card_project {
+.slider_project .card_project {
     position: relative;
     min-height: 250px;
     overflow: hidden;
@@ -167,8 +167,7 @@
     opacity: 1;
     visibility: visible;
 }
-
-.card_project:hover .card_title {
+.card_project:hover .card_title{
     display: none;
 }
 
@@ -182,7 +181,7 @@
     object-fit: cover;
 }
 
-.card_title {
+.slider_project .card_title {
     position: absolute;
     bottom: -20px;
     text-align: center;
@@ -212,7 +211,7 @@
     color: #fff;
 }
 
-.subTitle {}
+.slider_project .subTitle {}
 
 .hover_link {
     text-decoration: none;
