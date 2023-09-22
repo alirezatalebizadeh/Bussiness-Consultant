@@ -22,10 +22,10 @@ export default function Footer () {
         </div>
         <div className='form_container'>
           <div className='wrapper'>
-            <h2 className='form_title text-center mt-5'>
+            <h2 className='form_title text-center mt-5 title'>
               Subscribe To Our Newsletter
             </h2>
-            <p className='text-white text-center'>
+            <p className='text-white text-center subTitle'>
               Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
               consectetur et luctus et,
               <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}

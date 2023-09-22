@@ -12,7 +12,11 @@ const IMAGES = {
   brand5: new URL('./brand5.png', import.meta.url).href,
   brand6: new URL('./brand6.png', import.meta.url).href,
   brand7: new URL('./brand7.png', import.meta.url).href,
-  brand8: new URL('./brand8.png', import.meta.url).href
+  brand8: new URL('./brand8.png', import.meta.url).href,
+  team1: new URL('./teamwork.jpg', import.meta.url).href,
+  team2: new URL('./teamwork1.jpg', import.meta.url).href,
+  team3: new URL('./teamwork2.jpg', import.meta.url).href,
+  team4: new URL('./teamwork3.jpg', import.meta.url).href
 }
 
 export default IMAGES

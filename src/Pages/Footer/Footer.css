@@ -131,6 +131,7 @@ p.subTitle {
     padding: 50px;
 }
 
+
 .form_email {
     position: relative;
     width: 50%;
@@ -209,5 +210,14 @@ p.subTitle {
 
     .link_target {
         margin-top: .4rem !important;
+    }
+
+    .wrapper .title {
+        margin-bottom: 30px;
+    }
+
+    .wrapper .subTitle {
+        margin-bottom: 30px;
+
     }
 }
