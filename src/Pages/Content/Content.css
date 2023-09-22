@@ -39,7 +39,7 @@
     height: 300px;
 }
 
-
+.main_content {}
 
 
 .main_content .card {
@@ -87,16 +87,40 @@
     font-weight: 600;
 }
 
-.logo_brand_img {}
+.logo_brand_img {
+    position: relative;
+    z-index: 100;
+    max-width: 120px;
+}
 
-.Our_Project {}
+.Our_Project {
+    position: relative;
+}
+
+.main_content_slider_accordion {
+    background-color: #F6F9FF;
+    padding: 80px 0;
+}
+
+.Our_Project::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    left: 47%;
+    bottom: -60px;
+    clip-path: polygon(0 0, 49% 100%, 98% 0);
+}
 
 .menu_brand {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    column-gap: 150px;
+    row-gap: 50px;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .brand_item {}
