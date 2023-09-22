@@ -206,4 +206,8 @@ p.subTitle {
         top: 50px;
         margin: 0 auto;
     }
+
+    .link_target {
+        margin-top: .4rem !important;
+    }
 }

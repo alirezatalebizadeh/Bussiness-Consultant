@@ -5,7 +5,6 @@ import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
 import IMAGES from './../../images/images'
 
 export default function Footer () {
-  console.log(IMAGES)
   return (
     <div className='Footer'>
       {/* footer form */}
@@ -149,7 +148,9 @@ function newFunction_1 () {
 function newFunction () {
   return (
     <div className='footer_bottom'>
-      <h5>©Business Consultant. All Right Reserved 2020.</h5>
+      <h5 className='text-center'>
+        ©Business Consultant. All Right Reserved 2020.
+      </h5>
       <div className='sosial'>
         <a href='#'>
           <FaFacebookF className='sotial_link' />
