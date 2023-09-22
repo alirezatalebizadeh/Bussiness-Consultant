@@ -66,6 +66,7 @@
 
 p.subTitle {
     color: #fff;
+    margin-top: 20px;
 }
 
 .img2 {
@@ -75,11 +76,102 @@ p.subTitle {
 /* footer form */
 .footer_form {
     height: 100vh;
-    background: url('./../../images/background-footer.png'),rgb(4, 4, 240);
+    background: url('./../../images/background-footer.png'), rgb(4, 4, 240);
     background-position: center;
     background-size: cover;
 }
 
+.btn_form {
+    border-radius: 18px !important;
+    color: #fff;
+}
+
+.footer_form {
+    padding: 90px;
+    overflow: hidden;
+}
+
+.form_title {
+    color: #fff;
+    font-size: 1.5rem;
+
+
+}
+
+.form_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 50px;
+}
+
+.form_desc p {
+    flex-basis: 70%;
+
+}
+
+.form_container {
+    background: url('./../../images/background_form.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form_container::before {
+    position: absolute;
+    content: '';
+    background-color: #025bb4c4;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 100;
+    padding: 50px;
+}
+
+.form_email {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.form_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    position: absolute;
+    padding: 10px 20px;
+    color: #16181ed0;
+    border-radius: 15px;
+}
+
+.btn_email {
+    position: absolute;
+    right: 5px;
+    top: 2.5px;
+    border-radius: 15px !important;
+
+}
+
+/* // TODO debug responsive form */
+@media screen and (max-width:992px) {
+    .form_email {
+        width: 80% !important;
+
+    }
+
+    .form_desc p {
+        flex-basis: 50%;
+    }
+
+    .form_desc {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+}
 
 @media screen and (max-width:769px) {
     .footer_bottom {
@@ -101,5 +193,17 @@ p.subTitle {
 
     .footer_logo {
         padding: 30px !important;
+    }
+
+    .form_email {
+        width: 100% !important;
+
+    }
+
+    .btn_email {
+        right: 0 !important;
+        width: 100% !important;
+        top: 50px;
+        margin: 0 auto;
     }
 }
