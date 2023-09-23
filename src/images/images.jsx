@@ -16,6 +16,7 @@ const IMAGES = {
   team1: new URL('./teamwork.jpg', import.meta.url).href,
   team2: new URL('./teamwork1.jpg', import.meta.url).href,
   team3: new URL('./teamwork2.jpg', import.meta.url).href,
+  team4: new URL('./teamwork3.jpg', import.meta.url).href,
   option1: new URL('./option1.png', import.meta.url).href,
   option2: new URL('./option2.png', import.meta.url).href,
   option3: new URL('./option3.png', import.meta.url).href,

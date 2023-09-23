@@ -119,7 +119,7 @@ export default function Content() {
                 <h3 className='hover_title'>Praesent dictum quis </h3>
                 <p className='subTitle'>{paragrah1}</p>
                 <a
-                  href='#'
+                  href=''
                   onClick={() => {
                     setParagraph1(
                       'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
@@ -161,7 +161,7 @@ export default function Content() {
                 <h3 className='hover_title'>Praesent dictum quis </h3>
                 <p className='subTitle'>{paragrah13}</p>
                 <a
-                  href='#'
+                  href=''
                   onClick={() => {
                     setParagraph3(
                       'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
@@ -175,6 +175,7 @@ export default function Content() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
+            {console.log(IMAGES.team4)}
             <div className='card_project'>
               <img src={IMAGES.team4} alt='team' className='card_background' />
               <h4 className='card_title'>Praesent dictum quis </h4>
@@ -182,7 +183,7 @@ export default function Content() {
                 <h3 className='hover_title'>Praesent dictum quis </h3>
                 <p className='subTitle'>{paragrah14}</p>
                 <a
-                  href='#'
+                  href='javascript.void(0)'
                   onClick={() => {
                     setParagraph4(
                       'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
@@ -218,6 +219,7 @@ export default function Content() {
           </SwiperSlide>
         </Swiper>
       </div>
+
       <div className='Our_Project'>
         <h2 class='title_section'>
           TRUSTED BY CUSTOMERS<div class='border_bottom'></div>
@@ -229,6 +231,7 @@ export default function Content() {
         </p>
         {newFunction_2()}
       </div>
+
       <div className='main_content_slider_accordion'>
         {newFunction_1()}
         {newFunction()}

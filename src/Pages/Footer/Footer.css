@@ -79,6 +79,8 @@ p.subTitle {
     background: url('./../../images/background-footer.png'), rgb(4, 4, 240);
     background-position: center;
     background-size: cover;
+    padding: 90px;
+    overflow: hidden;
 }
 
 .btn_form {
@@ -86,10 +88,6 @@ p.subTitle {
     color: #fff;
 }
 
-.footer_form {
-    padding: 90px;
-    overflow: hidden;
-}
 
 .form_title {
     color: #fff;
@@ -197,7 +195,7 @@ p.subTitle {
     }
 
     .form_email {
-        width: 100% !important;
+        width: 99% !important;
 
     }
 
@@ -219,5 +217,18 @@ p.subTitle {
     .wrapper .subTitle {
         margin-bottom: 30px;
 
+    }
+
+    .footer_form {
+        padding: 90px 10px !important;
+    }
+
+    .form_desc,
+    .form_title {
+        padding: 0 10px !important;
+    }
+
+    .wrapper {
+        padding: 10px !important;
     }
 }
