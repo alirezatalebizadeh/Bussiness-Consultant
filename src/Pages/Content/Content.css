@@ -154,6 +154,11 @@
     .About_Us_sub_title {
         width: 100% !important;
     }
+
+    .col-12 {
+        text-align: center !important;
+        margin-top: 35px !important;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -172,6 +177,10 @@
 
     .option_img {
         width: 99% !important;
+    }
+
+    .form_email {
+        width: 98% !important;
     }
 }
 
@@ -276,4 +285,18 @@
     font-size: 1rem;
     width: 75%;
     margin: 0 auto;
+}
+
+.About_Us {
+    position: relative;
+}
+
+.About_Us .my_logo {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+}
+
+.slider_project .my_logo {
+    top: 80px !important;
 }

@@ -37,17 +37,21 @@ export default function Content() {
 
   return (
     <div className='main_content'>
-      <div id='#about' className="About_Us px-5 text-center">
+      <div id='about' className="About_Us px-5 text-center">
         <h2 className="title_section">ABOUT US
           <div className="border_bottom"></div>
         </h2>
         <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
-        <a href='service' className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></a>
+        <a className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></a>
+        <div className="my_logo">
+          <img className='logotop' src={IMAGES.logoBlue} alt="" />
+          <img className='logobottom' src={IMAGES.logoYellow} alt="" />
+        </div>
       </div>
       {/* content services */}
-      {/* <Logo /> */}
+
       <div className="content_services">
-        <h2 className="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
+        <h2 id='service' className="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
         <div className="option_services">
           <div className="row">
             <div className="col-12 col-md-4">
@@ -90,6 +94,10 @@ export default function Content() {
 
       {/* slider project */}
       <div className='slider_project'>
+        <div className="my_logo">
+          <img className='logotop' src={IMAGES.logoBlue} alt="" />
+          <img className='logobottom' src={IMAGES.logoYellow} alt="" />
+        </div>
         <h2 className='title_section'>
           OUR PROJECTS<div class='border_bottom'></div>
         </h2>
@@ -449,7 +457,7 @@ function newFunction_1() {
 function newFunction() {
   return (
     <div className='Fag'>
-      <h2 className='title_section'>
+      <h2 id='news' className='title_section'>
         FAQ
         <div className='border_bottom'></div>
       </h2>

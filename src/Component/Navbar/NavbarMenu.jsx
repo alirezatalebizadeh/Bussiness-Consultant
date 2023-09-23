@@ -6,7 +6,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import IMAGES from '../../images/images';
 import './NavbarMenu.css'
-import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { IoMail } from 'react-icons/io5'
 

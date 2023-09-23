@@ -1,39 +1,47 @@
 .header {
-    height: 85vh;
-    background-image: url('./../../images/background_header.png');
-    background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
-    z-index: -10;
+    height: 100vh;
+    background-image: url('./../../images/background_header.png');
+    background-size: fill;
+    background-position: 25% 100%;
     overflow: hidden;
 }
 
+
+/* *{
+    box-sizing: border-box;
+    border: 1px solid red !important;
+} */
+
 .img_background {
-    max-width: 500px;
+    max-width: 600px;
     height: 500px;
     position: absolute;
-    top: 125px;
-    right: -30px !important;
+    top: 150px;
+    right: -10px !important;
     transform: rotate(-9deg);
+    background-image: url('./../../images/back_header1.png');
+    background-size: cover;
+    background-position: 80% 20% !important;
 }
 
 .img_background img {
     width: 100%;
     height: 100%;
     object-fit: fill;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .header_content {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     max-width: 420px;
-    right: 0;
+    right: 5%;
     color: #fff;
-
 }
-
-.header_content_title {}
-
-.content_sub_title {}
 
 .content_btn {
     color: #fff !important;
@@ -42,22 +50,89 @@
 }
 
 
-@media screen and (max-width: 1015px) {
-    .header {
-        background-position: 80% !important;
-    }
-
-    .header_content {
-        /* top: 40% !important; */
-    }
-
-    .img_background {
-        top: 150px !important;
-    }
+.navbar-toggler {
+    background-color: #fff !important;
 }
 
-@media screen and (max-width: 710px) {
+.offcanvas.offcanvas-end {
+    width: 550px;
+    padding-top: 15px;
+    text-align: right;
+}
 
+.parent_icon {
+    position: relative;
+}
+
+.arrow_bottom_icon {
+    position: absolute;
+    color: #7db201;
+    left: 50%;
+    bottom: -30px;
+    z-index: 100;
+    font-size: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff !important;
+}
+
+.navbar {
+    background-color: #1c1c1a !important;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .navbar .nav-link {
+        margin: 0 5px;
+    }
+
+    .navbar .nav-link {
+        margin: 0 3px !important;
+    }
+
+    .btn_account {
+        margin-right: 30px;
+    }
+
+    .navbar .nav-link {
+        font-size: .9rem !important;
+    }
+
+}
+
+@media screen and (max-width: 1015px) {
+
+    /* .header {
+        background-position: 40% 20% !important;
+    }
+
+    .header_content {}
+
+    .img_background {
+        top: 200px !important;
+    } */
     .img_background {
         display: none !important;
     }
@@ -68,10 +143,45 @@
     }
 
     .header {
-        background-position: 20% !important;
+        background-position: 10% 80% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    a.nav-link {
+        color: #000 !important;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        color: #000000 !important;
+    }
+
+    a.link_phone_mail {
+        justify-content: end !important;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+
+    /* .img_background {
+        display: none !important;
+    }
+
+    .header_content {
+        top: 25% !important;
+        left: 5% !important;
+    }
+
+    .header {
+        background-position: 30% 80% !important;
+    } */
+    .header {
+        background-position: 30% 80% !important;
     }
 
 }
+
 
 @media screen and (max-width: 450px) {
 
@@ -81,12 +191,26 @@
     }
 
     .header {
-        background-position: 25% !important;
+        background-position: 35% 50% !important;
     }
 
 }
 
-/* * {
-    border: 1px solid blue !important;
-    box-sizing: border-box;
-} */
+.my_logo {
+    /* background-color: red; */
+    position: relative;
+    width: 50px;
+    height: 80px;
+}
+
+.logotop {
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+    width: 50px;
+}
+
+.logobottom {
+    position: absolute;
+    width: 50px;
+}

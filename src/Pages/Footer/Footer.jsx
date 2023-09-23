@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
 import IMAGES from './../../images/images'
 
-export default function Footer () {
+export default function Footer() {
   return (
     <div className='Footer'>
       {/* footer form */}
@@ -21,11 +21,11 @@ export default function Footer () {
           </button>
         </div>
         <div className='form_container'>
-          <div className='wrapper'>
+          <div className='wrapper px-1'>
             <h2 className='form_title text-center mt-5 title'>
               Subscribe To Our Newsletter
             </h2>
-            <p className='text-white text-center subTitle'>
+            <p className='text-white text-center subTitle '>
               Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
               consectetur et luctus et,
               <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}
@@ -52,9 +52,9 @@ export default function Footer () {
   )
 }
 
-function newFunction_1 () {
+function newFunction_1() {
   return (
-    <div className='footer_links'>
+    <div className='footer_links' id='contact'>
       <div className='footer_logo'>
         <div className='logo_top'>
           <h2 className='brand_name'>
@@ -135,7 +135,7 @@ function newFunction_1 () {
           </a>
         </li>
 
-        <li className='link_item'>
+        <li className='link_item' id='relation'>
           <a href='#' className='link_target'>
             Email: alireza.talebizadeh78@gmail.com
           </a>
@@ -145,7 +145,7 @@ function newFunction_1 () {
   )
 }
 
-function newFunction () {
+function newFunction() {
   return (
     <div className='footer_bottom'>
       <h5 className='text-center'>
