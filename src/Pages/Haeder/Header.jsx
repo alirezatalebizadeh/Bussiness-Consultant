@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../../Component/Navbar/Navbar'
+import NavbarMenu from '../../Component/Navbar/NavbarMenu'
 import './Header.css'
 import IMAGES from '../../images/images'
 
 export default function Header() {
     return (
         <div className='header'>
-            {/* <Navbar /> */}
+            <NavbarMenu />
             <div className="img_background">
                 <img src={IMAGES.back_header2} alt="" />
             </div>

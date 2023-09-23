@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import IMAGES from '../../images/images'
-import Logo from '../../Component/Navbar/Logo/Logo'
+// import Logo from '../../Component/Navbar/Logo/Logo'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -37,15 +37,17 @@ export default function Content() {
 
   return (
     <div className='main_content'>
-      <div className="About_Us px-5 text-center">
-        <h2 class="title_section">ABOUT US<div class="border_bottom"></div></h2>
+      <div id='#about' className="About_Us px-5 text-center">
+        <h2 className="title_section">ABOUT US
+          <div className="border_bottom"></div>
+        </h2>
         <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
         <button className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></button>
       </div>
       {/* content services */}
-      <Logo />
+      {/* <Logo /> */}
       <div className="content_services">
-        <h2 class="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
+        <h2 className="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
         <div className="option_services">
           <div className="row">
             <div className="col-12 col-md-4">
@@ -88,7 +90,7 @@ export default function Content() {
 
       {/* slider project */}
       <div className='slider_project'>
-        <h2 class='title_section'>
+        <h2 className='title_section'>
           OUR PROJECTS<div class='border_bottom'></div>
         </h2>
         <Swiper
@@ -175,7 +177,6 @@ export default function Content() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            {console.log(IMAGES.team4)}
             <div className='card_project'>
               <img src={IMAGES.team4} alt='team' className='card_background' />
               <h4 className='card_title'>Praesent dictum quis </h4>
@@ -221,10 +222,10 @@ export default function Content() {
       </div>
 
       <div className='Our_Project'>
-        <h2 class='title_section'>
-          TRUSTED BY CUSTOMERS<div class='border_bottom'></div>
+        <h2 className='title_section'>
+          TRUSTED BY CUSTOMERS<div className='border_bottom'></div>
         </h2>
-        <p class='card_title text-center mb-5'>
+        <p className='card_title text-center mb-5'>
           In consequat, quam id sodales hendrerit, eros mi molestie leo, nec
           <br />
           lacinia risus neque tristique augue. Proin tempus
