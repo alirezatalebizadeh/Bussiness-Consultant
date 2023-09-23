@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { BsFillArrowUpRightCircleFill } from 'react-icons/bs'
+import { BsFillArrowUpRightCircleFill, BsPlayFill } from 'react-icons/bs'
 import Accordion from 'react-bootstrap/Accordion'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import IMAGES from '../../images/images'
-
+import Logo from '../../Component/Navbar/Logo/Logo'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -21,7 +21,7 @@ import {
 } from 'swiper/modules'
 import './Content.css'
 
-export default function Content () {
+export default function Content() {
   const [paragrah1, setParagraph1] = useState(
     'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet,'
   )
@@ -34,8 +34,59 @@ export default function Content () {
   const [paragrah14, setParagraph4] = useState(
     'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet,'
   )
+
   return (
     <div className='main_content'>
+      <div className="About_Us px-5 text-center">
+        <h2 class="title_section">ABOUT US<div class="border_bottom"></div></h2>
+        <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
+        <button className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></button>
+      </div>
+      {/* content services */}
+      <Logo />
+      <div className="content_services">
+        <h2 class="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
+        <div className="option_services">
+          <div className="row">
+            <div className="col-12 col-md-4">
+              <img src={IMAGES.personOption} className='option_img' alt="person" />
+            </div>
+
+            <div className="col-12 col-md-8 mt-2">
+              <div className="row px-3">
+                <div className="col-12 col-md-6">
+                  <img src={IMAGES.option1} alt="option1" />
+                  <h5 className='option_title'>Lawyer Consulting</h5>
+                  <p className='option_subTitle'>Phasellus dignissim, tellus in pellentesque mollis, mauris orci dignissim nisl</p>
+                </div>
+                <div className="col-12 col-md-6">
+                  <img src={IMAGES.option2} alt="option1" />
+                  <h5 className='option_title'>Travel And Aviation Consulting</h5>
+                  <p className='option_subTitle'>Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique. </p>
+                </div>
+                <div className="col-12 col-md-6">
+                  <img src={IMAGES.option3} alt="option1" />
+                  <h5 className='option_title'>IT Management</h5>
+                  <p className='option_subTitle'>Cras gravida bibendum dolor eu varius. Morbi fermentum velit nisl, eget vehicula lorem sodales eget. Donec quis volutpat orci. </p>
+                </div>
+                <div className="col-12 col-md-6">
+                  <img src={IMAGES.option4} alt="option1" />
+                  <h5 className='option_title'>Financial Services Consulting</h5>
+                  <p className='option_subTitle'>Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim. Nullam pulvinar felis at metus malesuada</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      {/* slider project */}
       <div className='slider_project'>
         <h2 class='title_section'>
           OUR PROJECTS<div class='border_bottom'></div>
@@ -186,7 +237,7 @@ export default function Content () {
   )
 }
 
-function newFunction_2 () {
+function newFunction_2() {
   return (
     <ul className='menu_brand'>
       <li className='brand_item'>
@@ -273,7 +324,7 @@ function newFunction_2 () {
   )
 }
 
-function newFunction_1 () {
+function newFunction_1() {
   return (
     <div className='slider_opinion'>
       <Swiper
@@ -391,7 +442,7 @@ function newFunction_1 () {
   )
 }
 
-function newFunction () {
+function newFunction() {
   return (
     <div className='Fag'>
       <h2 className='title_section'>
