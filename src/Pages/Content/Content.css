@@ -76,6 +76,10 @@
     margin: 20px 0;
 }
 
+.option_services {
+    overflow: hidden;
+}
+
 .body_footer {
     display: flex;
     align-items: center;

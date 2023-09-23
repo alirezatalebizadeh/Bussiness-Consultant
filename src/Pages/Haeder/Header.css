@@ -4,6 +4,7 @@
     background-size: cover;
     position: relative;
     z-index: -10;
+    overflow: hidden;
 }
 
 .img_background {
@@ -11,7 +12,7 @@
     height: 500px;
     position: absolute;
     top: 125px;
-    right: -15px !important;
+    right: -30px !important;
     transform: rotate(-9deg);
 }
 
@@ -41,15 +42,17 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
     .header {
         background-position: 80% !important;
     }
 
-    .header_content {}
+    .header_content {
+        /* top: 40% !important; */
+    }
 
     .img_background {
-        top: 50px !important;
+        top: 150px !important;
     }
 }
 
@@ -82,3 +85,8 @@
     }
 
 }
+
+/* * {
+    border: 1px solid blue !important;
+    box-sizing: border-box;
+} */
