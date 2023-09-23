@@ -63,8 +63,8 @@
     }
 
     .header_content {
-        top: 10% !important;
-        left: 10% !important;
+        top: 25% !important;
+        left: 5% !important;
     }
 
     .header {
@@ -76,12 +76,12 @@
 @media screen and (max-width: 450px) {
 
     .header_content {
-        top: 10% !important;
+        top: 20% !important;
         left: 2% !important;
     }
 
     .header {
-        background-position: 40% !important;
+        background-position: 25% !important;
     }
 
 }

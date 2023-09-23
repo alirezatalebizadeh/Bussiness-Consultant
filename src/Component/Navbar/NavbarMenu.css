@@ -22,12 +22,6 @@ a.nav-link {
     color: #fff;
     margin: 0 10px;
     font-size: 1rem !important;
-    cursor: pointer;
-    position: sticky;
-    z-index: 1000;
-}
-.navbar-expand-md{
-    background-color: red !important;
-    position: relative;
-    z-index: 1000;
+    cursor: pointer !important;
+   
 }

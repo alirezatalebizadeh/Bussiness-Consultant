@@ -12,7 +12,7 @@ import { IoMail } from 'react-icons/io5'
 
 export default function NavbarMenu() {
     return (
-        <Navbar expand='md' className='mb-3'>
+        <Navbar className='navbar' expand='md' className='mb-3'>
             <Container fluid>
                 <Navbar.Brand href='#'>
                     <img src={IMAGES.person1} alt="" />
@@ -33,7 +33,7 @@ export default function NavbarMenu() {
                             </Nav.Link>
                             <Nav.Link href='#contact'>CONTACT US</Nav.Link>
                             <Nav.Link href='#news'>NEWS</Nav.Link>
-                            <Nav.Link href='#services'>SERVICES</Nav.Link>
+                            <Nav.Link href='#service'>SERVICES</Nav.Link>
                             <Nav.Link href='#about'>ABOUT US</Nav.Link>
                             <Nav.Link href='#home'> HOME </Nav.Link>
                         </Nav>

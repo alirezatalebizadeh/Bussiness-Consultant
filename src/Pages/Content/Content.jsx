@@ -42,7 +42,7 @@ export default function Content() {
           <div className="border_bottom"></div>
         </h2>
         <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
-        <button className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></button>
+        <a href='service' className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></a>
       </div>
       {/* content services */}
       {/* <Logo /> */}
