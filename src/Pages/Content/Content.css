@@ -42,7 +42,9 @@
     height: 300px;
 }
 
-.main_content {}
+.main_content {
+    margin-top: 200px;
+}
 
 
 .main_content .card {
