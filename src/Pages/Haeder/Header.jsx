@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+//! custom css
 import './Header.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -49,17 +50,16 @@ function NavbarMenu() {
             >
                 <Offcanvas.Body>
                     <Nav className='justify-content-center flex-grow-1 pe-3'>
+                        <Nav.Link href='#home'> HOME </Nav.Link>
+                        <Nav.Link href='#about'>ABOUT US</Nav.Link>
+                        <Nav.Link href='#service'>SERVICES</Nav.Link>
+                        <Nav.Link href='#news'>NEWS</Nav.Link>
+                        <Nav.Link href='#contact'>CONTACT US</Nav.Link>
                         <Nav.Link href='#relation' className='link_phone_mail'>
                             <IoMail />
                             <BsFillTelephoneFill />
                         </Nav.Link>
-                        <Nav.Link
 
-                            href='#contact'>CONTACT US</Nav.Link>
-                        <Nav.Link href='#news'>NEWS</Nav.Link>
-                        <Nav.Link href='#service'>SERVICES</Nav.Link>
-                        <Nav.Link href='#about'>ABOUT US</Nav.Link>
-                        <Nav.Link href='#home'> HOME </Nav.Link>
                     </Nav>
 
                 </Offcanvas.Body>

@@ -43,6 +43,13 @@
     color: #fff;
 }
 
+a.link_phone_mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
 .content_btn {
     color: #fff !important;
     border-radius: 25px !important;
@@ -55,7 +62,7 @@
 }
 
 .offcanvas.offcanvas-end {
-    width: 550px;
+    width: 250px !important;
     padding-top: 15px;
     text-align: right;
 }
