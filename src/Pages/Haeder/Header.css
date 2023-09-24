@@ -99,9 +99,20 @@
     color: #fff !important;
     font-weight: 650;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 35px;
+    align-items: center;
 }
 
 
+.container-fluid {
+    align-items: start !important;
+}
+
+.navbar-toggler {
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 1000px) {
     .navbar .nav-link {
@@ -159,23 +170,15 @@
     a.link_phone_mail {
         justify-content: end !important;
     }
+
+    .navbar-brand p {
+        margin-top: 10px !important;
+    }
+
 }
 
 
 @media screen and (max-width: 710px) {
-
-    /* .img_background {
-        display: none !important;
-    }
-
-    .header_content {
-        top: 25% !important;
-        left: 5% !important;
-    }
-
-    .header {
-        background-position: 30% 80% !important;
-    } */
     .header {
         background-position: 30% 80% !important;
     }

@@ -246,6 +246,9 @@
 .hover_link {
     text-decoration: none;
     color: #E8BF3B;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 
 /* =======option section */

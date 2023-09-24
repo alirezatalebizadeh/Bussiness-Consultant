@@ -1,26 +1,32 @@
 import React, { useState } from 'react'
 import { BsFillArrowUpRightCircleFill, BsPlayFill } from 'react-icons/bs'
 import Accordion from 'react-bootstrap/Accordion'
-// Import Swiper React components
+// !Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 import IMAGES from '../../images/images'
-// import Logo from '../../Component/Navbar/Logo/Logo'
-// Import Swiper styles
+// !Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 
-// import required modules
-// import required modules
+// !import required modules
 import {
   EffectCoverflow,
   Pagination,
   Navigation,
   Virtual
 } from 'swiper/modules'
+//!custom css
 import './Content.css'
 
+//
+//
+//
+//
+//
+//
+//
 export default function Content() {
   const [paragrah1, setParagraph1] = useState(
     'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet,'
@@ -37,62 +43,15 @@ export default function Content() {
 
   return (
     <div className='main_content'>
-      <div id='about' className="About_Us px-5 text-center">
-        <h2 className="title_section">ABOUT US
-          <div className="border_bottom"></div>
-        </h2>
-        <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
-        <a className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></a>
-        <div className="my_logo">
-          <img className='logotop' src={IMAGES.logoBlue} alt="" />
-          <img className='logobottom' src={IMAGES.logoYellow} alt="" />
-        </div>
-      </div>
-      {/* content services */}
+      {AboutUs()}
+      {/*// !content services */}
 
       <div className="content_services">
         <h2 id='service' className="title_section">OUR SERVICES<div class="border_bottom"></div></h2>
-        <div className="option_services">
-          <div className="row">
-            <div className="col-12 col-md-4">
-              <img src={IMAGES.personOption} className='option_img' alt="person" />
-            </div>
-
-            <div className="col-12 col-md-8 mt-2">
-              <div className="row px-3">
-                <div className="col-12 col-md-6">
-                  <img src={IMAGES.option1} alt="option1" />
-                  <h5 className='option_title'>Lawyer Consulting</h5>
-                  <p className='option_subTitle'>Phasellus dignissim, tellus in pellentesque mollis, mauris orci dignissim nisl</p>
-                </div>
-                <div className="col-12 col-md-6">
-                  <img src={IMAGES.option2} alt="option1" />
-                  <h5 className='option_title'>Travel And Aviation Consulting</h5>
-                  <p className='option_subTitle'>Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique. </p>
-                </div>
-                <div className="col-12 col-md-6">
-                  <img src={IMAGES.option3} alt="option1" />
-                  <h5 className='option_title'>IT Management</h5>
-                  <p className='option_subTitle'>Cras gravida bibendum dolor eu varius. Morbi fermentum velit nisl, eget vehicula lorem sodales eget. Donec quis volutpat orci. </p>
-                </div>
-                <div className="col-12 col-md-6">
-                  <img src={IMAGES.option4} alt="option1" />
-                  <h5 className='option_title'>Financial Services Consulting</h5>
-                  <p className='option_subTitle'>Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim. Nullam pulvinar felis at metus malesuada</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
+        {OurServices()}
 
       </div>
-
-
-
-
-      {/* slider project */}
+      {/*// !slider project */}
       <div className='slider_project'>
         <div className="my_logo">
           <img className='logotop' src={IMAGES.logoBlue} alt="" />
@@ -101,133 +60,9 @@ export default function Content() {
         <h2 className='title_section'>
           OUR PROJECTS<div class='border_bottom'></div>
         </h2>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 10
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 10
-            }
-          }}
-          modules={[Navigation]}
-          className='mySwiper'
-        >
-          <SwiperSlide>
-            <div className='card_project'>
-              <img src={IMAGES.team1} alt='team' className='card_background' />
-              <h4 className='card_title'>Praesent dictum quis </h4>
-              <div className='card_hover'>
-                <h3 className='hover_title'>Praesent dictum quis </h3>
-                <p className='subTitle'>{paragrah1}</p>
-                <a
-                  href=''
-                  onClick={() => {
-                    setParagraph1(
-                      'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
-                    )
-                  }}
-                  className='hover_link'
-                >
-                  Read More <BsFillArrowUpRightCircleFill />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='card_project'>
-              <img src={IMAGES.team2} alt='team' className='card_background' />
-              <h4 className='card_title'>Praesent dictum quis </h4>
-              <div className='card_hover'>
-                <h3 className='hover_title'>Praesent dictum quis </h3>
-                <p className='subTitle'>{paragrah2}</p>
-                <a
-                  href='#'
-                  onClick={() => {
-                    setParagraph2(
-                      'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
-                    )
-                  }}
-                  className='hover_link'
-                >
-                  Read More <BsFillArrowUpRightCircleFill />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='card_project'>
-              <img src={IMAGES.team3} alt='team' className='card_background' />
-              <h4 className='card_title'>Praesent dictum quis </h4>
-              <div className='card_hover'>
-                <h3 className='hover_title'>Praesent dictum quis </h3>
-                <p className='subTitle'>{paragrah13}</p>
-                <a
-                  href=''
-                  onClick={() => {
-                    setParagraph3(
-                      'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
-                    )
-                  }}
-                  className='hover_link'
-                >
-                  Read More <BsFillArrowUpRightCircleFill />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='card_project'>
-              <img src={IMAGES.team4} alt='team' className='card_background' />
-              <h4 className='card_title'>Praesent dictum quis </h4>
-              <div className='card_hover'>
-                <h3 className='hover_title'>Praesent dictum quis </h3>
-                <p className='subTitle'>{paragrah14}</p>
-                <a
-                  href='javascript.void(0)'
-                  onClick={() => {
-                    setParagraph4(
-                      'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
-                    )
-                  }}
-                  className='hover_link'
-                >
-                  Read More <BsFillArrowUpRightCircleFill />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='card_project'>
-              <img src={IMAGES.team1} alt='' className='card_background' />
-              <h4 className='card_title'>Praesent dictum quis </h4>
-              <div className='card_hover'>
-                <h3 className='hover_title'>Praesent dictum quis</h3>
-                <p className='subTitle'>{paragrah1}</p>
-                <a
-                  href='#'
-                  onClick={() => {
-                    setParagraph1(
-                      'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
-                    )
-                  }}
-                  className='hover_link'
-                >
-                  Read More <BsFillArrowUpRightCircleFill />
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+        {OurProjectSlider(paragrah1, setParagraph1, paragrah2, setParagraph2, paragrah13, setParagraph3, paragrah14, setParagraph4)}
       </div>
+
 
       <div className='Our_Project'>
         <h2 className='title_section'>
@@ -238,18 +73,205 @@ export default function Content() {
           <br />
           lacinia risus neque tristique augue. Proin tempus
         </p>
-        {newFunction_2()}
+        {Brands()}
       </div>
 
       <div className='main_content_slider_accordion'>
-        {newFunction_1()}
-        {newFunction()}
+        {SliderBottomBrand()}
+        {Faq()}
       </div>
     </div>
   )
 }
 
-function newFunction_2() {
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+function OurProjectSlider(paragrah1, setParagraph1, paragrah2, setParagraph2, paragrah13, setParagraph3, paragrah14, setParagraph4) {
+  return <Swiper
+    slidesPerView={1}
+    spaceBetween={10}
+    breakpoints={{
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 10
+      }
+    }}
+    modules={[Navigation]}
+    className='mySwiper'
+  >
+    <SwiperSlide>
+      <div className='card_project'>
+        <img src={IMAGES.team1} alt='team' className='card_background' />
+        <h4 className='card_title'>Praesent dictum quis </h4>
+        <div className='card_hover'>
+          <h3 className='hover_title'>Praesent dictum quis </h3>
+          <p className='subTitle'>{paragrah1}</p>
+          <button
+
+            onClick={() => {
+              setParagraph1(
+                'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
+              )
+            }}
+            className='hover_link'
+          >
+            Read More <BsFillArrowUpRightCircleFill />
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className='card_project'>
+        <img src={IMAGES.team2} alt='team' className='card_background' />
+        <h4 className='card_title'>Praesent dictum quis </h4>
+        <div className='card_hover'>
+          <h3 className='hover_title'>Praesent dictum quis </h3>
+          <p className='subTitle'>{paragrah2}</p>
+          <button
+            onClick={() => {
+              setParagraph2(
+                'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
+              )
+            }}
+            className='hover_link'
+          >
+            Read More <BsFillArrowUpRightCircleFill />
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className='card_project'>
+        <img src={IMAGES.team3} alt='team' className='card_background' />
+        <h4 className='card_title'>Praesent dictum quis </h4>
+        <div className='card_hover'>
+          <h3 className='hover_title'>Praesent dictum quis </h3>
+          <p className='subTitle'>{paragrah13}</p>
+          <button
+            onClick={() => {
+              setParagraph3(
+                'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
+              )
+            }}
+            className='hover_link'
+          >
+            Read More <BsFillArrowUpRightCircleFill />
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className='card_project'>
+        <img src={IMAGES.team4} alt='team' className='card_background' />
+        <h4 className='card_title'>Praesent dictum quis </h4>
+        <div className='card_hover'>
+          <h3 className='hover_title'>Praesent dictum quis </h3>
+          <p className='subTitle'>{paragrah14}</p>
+          <button
+
+            onClick={() => {
+              setParagraph4(
+                'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
+              )
+            }}
+            className='hover_link'
+          >
+            Read More <BsFillArrowUpRightCircleFill />
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className='card_project'>
+        <img src={IMAGES.team1} alt='' className='card_background' />
+        <h4 className='card_title'>Praesent dictum quis </h4>
+        <div className='card_hover'>
+          <h3 className='hover_title'>Praesent dictum quis</h3>
+          <p className='subTitle'>{paragrah1}</p>
+          <button
+
+            onClick={() => {
+              setParagraph1(
+                'Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna sit amet, luctus aliquet nibh. Curabitur auctor leo et libero consectetur gravida. Morbi gravida et sem dictum varius. Proin eget viverra sem, non euismod est. Maecenas facilisis urna in lectus aliquet venenatis. Etiam et metus nec mauris condimentum vulputate. Aenean volutpat odio quis egestas tempus. Fusce tempor vulputate luctus. Pellentesque vulputate viverra ex eget elementum. Aliquam ut feugiat felis.'
+              )
+            }}
+            className='hover_link'
+          >
+            Read More <BsFillArrowUpRightCircleFill />
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+  </Swiper>
+}
+
+function OurServices() {
+  return <div className="option_services">
+    <div className="row">
+      <div className="col-12 col-md-4">
+        <img src={IMAGES.personOption} className='option_img' alt="person" />
+      </div>
+
+      <div className="col-12 col-md-8 mt-2">
+        <div className="row px-3">
+          <div className="col-12 col-md-6">
+            <img src={IMAGES.option1} alt="option1" />
+            <h5 className='option_title'>Lawyer Consulting</h5>
+            <p className='option_subTitle'>Phasellus dignissim, tellus in pellentesque mollis, mauris orci dignissim nisl</p>
+          </div>
+          <div className="col-12 col-md-6">
+            <img src={IMAGES.option2} alt="option1" />
+            <h5 className='option_title'>Travel And Aviation Consulting</h5>
+            <p className='option_subTitle'>Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique. </p>
+          </div>
+          <div className="col-12 col-md-6">
+            <img src={IMAGES.option3} alt="option1" />
+            <h5 className='option_title'>IT Management</h5>
+            <p className='option_subTitle'>Cras gravida bibendum dolor eu varius. Morbi fermentum velit nisl, eget vehicula lorem sodales eget. Donec quis volutpat orci. </p>
+          </div>
+          <div className="col-12 col-md-6">
+            <img src={IMAGES.option4} alt="option1" />
+            <h5 className='option_title'>Financial Services Consulting</h5>
+            <p className='option_subTitle'>Phasellus risus turpis, pretium sit amet magna non, molestie ultricies enim. Nullam pulvinar felis at metus malesuada</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+}
+
+function AboutUs() {
+  return <div id='about' className="About_Us px-5 text-center">
+    <h2 className="title_section">ABOUT US
+      <div className="border_bottom"></div>
+    </h2>
+    <p className="About_Us_sub_title">In consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan dui, ac iaculis sem viverra eu. Donec convallis, elit vitae ornare cursus, libero purus facilisis felis, a volutpat metus tortor bibendum elit. Integer nec mi eleifend, fermentum lorem vitae, finibus neque. Cras accumsan pretium dignissim. Curabitur a orci lorem. Phasellus tempor dolor vel odio efficitur, ac sollicitudin ipsum feugiat. Proin feugiat aliquet turpis, et rhoncus nibh elementum quis.</p>
+    <a className='btn btn-warning About_btn my-3'>Read More <BsPlayFill /></a>
+    <div className="my_logo">
+      <img className='logotop' src={IMAGES.logoBlue} alt="" />
+      <img className='logobottom' src={IMAGES.logoYellow} alt="" />
+    </div>
+  </div>
+}
+
+function Brands() {
   return (
     <ul className='menu_brand'>
       <li className='brand_item'>
@@ -336,7 +358,8 @@ function newFunction_2() {
   )
 }
 
-function newFunction_1() {
+
+function SliderBottomBrand() {
   return (
     <div className='slider_opinion'>
       <Swiper
@@ -454,7 +477,8 @@ function newFunction_1() {
   )
 }
 
-function newFunction() {
+
+function Faq() {
   return (
     <div className='Fag'>
       <h2 id='news' className='title_section'>

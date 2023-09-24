@@ -20,39 +20,52 @@ export default function Footer() {
             Start Your Project Now
           </button>
         </div>
-        <div className='form_container'>
-          <div className='wrapper px-1'>
-            <h2 className='form_title text-center mt-5 title'>
-              Subscribe To Our Newsletter
-            </h2>
-            <p className='text-white text-center subTitle '>
-              Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
-              consectetur et luctus et,
-              <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}
-            </p>
-            <div className='form_email'>
-              <input
-                type='email'
-                placeholder='Enter Your Email'
-                className='form_input'
-              />
-              <button className='btn btn-warning btn_email text-white'>
-                Subscribe Now
-              </button>
-            </div>
-          </div>
-        </div>
+        {/* //!form  */}
+        {FormEmail()}
       </div>
-      {/* footer links */}
-      {newFunction_1()}
+      {/* //! footer links */}
+      {LinksFooter()}
 
-      {/* footer bottom */}
-      {newFunction()}
+      {/* //!footer sotial and copy */}
+      {CopySotial()}
     </div>
   )
 }
 
-function newFunction_1() {
+
+
+
+//
+//
+//
+//
+//
+//
+function FormEmail() {
+  return <div className='form_container'>
+    <div className='wrapper px-1'>
+      <h2 className='form_title text-center mt-5 title'>
+        Subscribe To Our Newsletter
+      </h2>
+      <p className='text-white text-center subTitle '>
+        Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
+        consectetur et luctus et,
+        <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}
+      </p>
+      <div className='form_email'>
+        <input
+          type='email'
+          placeholder='Enter Your Email'
+          className='form_input' />
+        <button className='btn btn-warning btn_email text-white'>
+          Subscribe Now
+        </button>
+      </div>
+    </div>
+  </div>
+}
+
+function LinksFooter() {
   return (
     <div className='footer_links' id='contact'>
       <div className='footer_logo'>
@@ -145,7 +158,7 @@ function newFunction_1() {
   )
 }
 
-function newFunction() {
+function CopySotial() {
   return (
     <div className='footer_bottom'>
       <h5 className='text-center'>
