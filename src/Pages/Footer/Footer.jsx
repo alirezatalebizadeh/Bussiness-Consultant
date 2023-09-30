@@ -11,7 +11,7 @@ export default function Footer() {
       <div className='footer_form'>
         <h2 className='form_title'>Connect Our Consulting Services</h2>
         <div className='form_desc'>
-          <p className='text-white'>
+          <p className='text-white subTitle'>
             Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
             consectetur et luctus et,
             <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}
@@ -44,10 +44,10 @@ export default function Footer() {
 function FormEmail() {
   return <div className='form_container'>
     <div className='wrapper px-1'>
-      <h2 className='form_title text-center mt-5 title'>
+      <h2 className='form_title mt-5 title'>
         Subscribe To Our Newsletter
       </h2>
-      <p className='text-white text-center subTitle '>
+      <p className='text-white subTitle'>
         Fusce at nisi eget dolor rhoncus facilisis. Mauris ante nisl,
         consectetur et luctus et,
         <br /> porta ut dolor. Curabitur ultricies ultrices nulla.{' '}
@@ -161,7 +161,7 @@ function LinksFooter() {
 function CopySotial() {
   return (
     <div className='footer_bottom'>
-      <h5 className='text-center'>
+      <h5 className='subTitle'>
         ©Business Consultant. All Right Reserved 2020.
       </h5>
       <div className='sosial'>

@@ -1,7 +1,7 @@
 .footer_bottom {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 
 .Footer {
@@ -34,6 +34,7 @@
     align-items: start;
     justify-content: space-around;
     padding: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .footer_logo .logo {
@@ -113,6 +114,13 @@ p.subTitle {
     background-size: cover;
     background-position: center;
     position: relative;
+
+}
+
+.form_title,
+.form_desc p,
+.subTitle {
+    text-align: center;
 }
 
 .form_container::before {
@@ -155,7 +163,6 @@ p.subTitle {
 
 }
 
-/* // TODO debug responsive form */
 @media screen and (max-width:992px) {
     .form_email {
         width: 80% !important;
@@ -187,11 +194,11 @@ p.subTitle {
     }
 
     .footer_bottom {
-        margin-top: 25px;
+        /* margin-top: 25px; */
     }
 
     .footer_logo {
-        padding: 30px !important;
+        padding: 0.5rem !important;
     }
 
     .form_email {
@@ -223,12 +230,30 @@ p.subTitle {
         padding: 90px 10px !important;
     }
 
-    .form_desc,
-    .form_title {
-        padding: 0 10px !important;
-    }
-
     .wrapper {
         padding: 10px !important;
+    }
+
+    .subTitle,
+    .form_title {
+        text-align: left !important;
+        /* padding-left: 0.5rem !important; */
+    }
+
+    ol, ul {
+        padding: 0.5rem !important;
+    }
+
+    .footer_bottom {
+        display: block;
+
+    }
+
+    .sosial {
+        text-align: center;
+    }
+
+    .logo_top {
+        justify-content: start;
     }
 }
