@@ -3,6 +3,6 @@
 you can see - [template-site](https://bussiness-consoltant.netlify.app)
 
 ''' this site created with react()'''
-
+to start ==> ```npm run dev```
 
 
