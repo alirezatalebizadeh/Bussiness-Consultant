@@ -19,6 +19,7 @@
     width: fit-content;
     width: moz-fit-content;
     margin: 40px auto;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -74,6 +75,7 @@
     color: #999999;
     font-size: 1rem;
     margin: 15px 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .option_services {
@@ -199,6 +201,7 @@
 
 .card_project:hover .card_title {
     display: none;
+    font-family: 'Playfair Display', serif !important;
 }
 
 .card_background {
@@ -239,6 +242,7 @@
 
 .hover_title {
     color: #fff;
+    font-family: 'Lato', sans-serif;
 }
 
 .slider_project .subTitle {}
@@ -255,6 +259,7 @@
 .option_title {
     color: #002077;
     margin: 20px 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .option_img {
@@ -288,6 +293,7 @@
     font-size: 1rem;
     width: 75%;
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;
 }
 
 .About_Us {

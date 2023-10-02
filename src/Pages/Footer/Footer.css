@@ -65,6 +65,12 @@
     color: #fff;
 }
 
+.form_title {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
 p.subTitle {
     color: #fff;
     margin-top: 20px;
@@ -97,15 +103,27 @@ p.subTitle {
 
 }
 
+.brand_name {
+    font-family: 'Playfair Display', serif;
+
+}
+
 .form_desc {
     display: flex;
     justify-content: space-between;
     align-items: start;
     margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .form_desc p {
     flex-basis: 70%;
+
+}
+
+h5.subTitle {
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -135,6 +153,12 @@ p.subTitle {
     position: relative;
     z-index: 100;
     padding: 50px;
+}
+
+.link_target {
+    font-family: 'Lato', sans-serif;
+
+
 }
 
 

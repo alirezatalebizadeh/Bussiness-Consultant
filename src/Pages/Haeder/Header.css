@@ -35,6 +35,14 @@
     visibility: hidden;
 }
 
+.header_content_title {
+    font-family: 'Playfair Display', serif;
+}
+
+.content_sub_title {
+    font-family: 'Playfair Display', serif;
+}
+
 .header_content {
     position: absolute;
     bottom: 20px;
@@ -95,6 +103,7 @@ a.link_phone_mail {
     color: #fff;
     font-size: 1rem;
     margin: 0 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar .nav-link:hover,
@@ -110,6 +119,7 @@ a.link_phone_mail {
     justify-content: space-around;
     column-gap: 35px;
     align-items: center;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -142,15 +152,6 @@ a.link_phone_mail {
 
 @media screen and (max-width: 1015px) {
 
-    /* .header {
-        background-position: 40% 20% !important;
-    }
-
-    .header_content {}
-
-    .img_background {
-        top: 200px !important;
-    } */
     .img_background {
         display: none !important;
     }
