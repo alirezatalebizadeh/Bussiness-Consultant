@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React,{ useState } from 'react'
 import './App.css'
 import Header from './Pages/Haeder/Header'
 import Footer from './Pages/Footer/Footer'
